@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Easy Calendar</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="Login.html"><span class="logo_colour">EasyCalendar</span></a></h1>
+          <h2 style="color: #">Easy time for everybody.</h2>
+
+          <form style="font: normal 150% News Cycle, arial, sans-serif; color: #8611CC" action="index.html">
+            Usuario:
+            <input class="contact2" type="text" name="firstname">
+            Contraseña:
+            <input class="contact2" type="text" name="lastname">
+            <input class="enterButton" type="submit" value="Submit">
+          </form>
+          
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container_log">
+        <div id="gallery">
+          <ul class="images">
+            <li class="show"><img width="450" height="450" src="images/1.jpg" alt="photo_one" /></li>
+            <li><img width="450" height="450" src="images/2.jpg" alt="photo_two" /></li>
+            <li><img width="450" height="450" src="images/3.jpg" alt="photo_three" /></li>
+            <li><img width="450" height="450" src="images/4.jpg" alt="photo_four" /></li>
+            <li><img width="450" height="450" src="images/5.jpg" alt="photo_five" /></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content_log" style="color: #8611CC">
+        <h1 style="font-size: 250%">Registrate</h1>
+        <form style="font: normal 170% News Cycle, arial, sans-serif;" action="index.html">
+            Nombre:<br>
+            <input class="contact" type="text" name="firstname">
+            <br>
+            Apellidos:<br>
+            <input class="contact" type="text" name="lastname">
+            <br>
+            Sexo:<br>
+            <select  id="sexo" name="sexo">
+              <option value="hombre">Hombre</option>
+              <option value="mujer">Mujer</option>
+            </select>
+            <br>
+            Correo:<br>
+            <input class="contact" type="text" name="correo">
+            <br>
+            Contraseña:<br>
+            <input class="contact" type="text" name="Contraseña">
+            <br>
+              <input class="submitButton" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy;. All Rights Reserved. | Ex'IMT  </p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+
+      $('.submitButton').mouseenter(function(){
+        $(this).css("background-color", "#05C45D");
+      });
+
+      $('.submitButton').mouseleave(function(){
+        $(this).css("background-color",'#8611CC');
+      });
+
+      $('.enterButton').mouseenter(function(){
+        $(this).css("background-color", "#05C45D");
+      });
+
+      $('.enterButton').mouseleave(function(){
+        $(this).css("background-color",'#8611CC');
+      });
+    });
+
+  </script>
+</body>
+</html>
